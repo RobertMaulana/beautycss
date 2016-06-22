@@ -1,0 +1,16 @@
+@font-face{
+    font-family:'MyFont';
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+body{
+    font-family: 'MyFont';
+    font-size: 17px;
+}
+p{
+    line-height: 1.5;
+    text-align: justify;
+}
+span{
+    font-size: 13px;
+    font-weight: bold;
+}
