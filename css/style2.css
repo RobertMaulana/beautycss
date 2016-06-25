@@ -1,0 +1,74 @@
+@font-face{
+    font-family:'MyFont';
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    margin: 0 auto;
+    width: 1140px;
+}
+.blog-post{
+    width: 75%;
+    float: left;
+    margin-top: 30px;
+    position: relative;
+}
+.blog-post h2{
+    margin-bottom: 20px;
+}
+.blog-post #date{
+    margin-bottom: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.content{
+    margin-bottom: 20px;
+}
+.sidebar{
+    width: 23%;
+    float: left;
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+.sidebar ul li{
+    list-style: none;
+}
+body{
+    font-family: 'MyFont';
+    font-size: 17px;
+}
+
+p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.footer{
+    border-top: solid 1px #F2F2F2;
+}
+
+.footer img{
+    max-width: 100px;
+    height: 100px;
+    float: left;
+    padding-top: 5px;
+
+}
+
+.footer p{
+    float: left;
+    margin: 40px 0 0 10px;
+    padding-top: 5px;
+}

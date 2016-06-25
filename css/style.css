@@ -1,16 +1,18 @@
-@font-face{
-    font-family:'MyFont';
-    src: url('../fonts/Roboto-Thin.ttf');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
-    font-family: 'MyFont';
-    font-size: 17px;
+
+html{
+    background-color: #FFF;
+    color: #555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
 }
-p{
-    line-height: 1.5;
-    text-align: justify;
-}
-span{
-    font-size: 13px;
-    font-weight: bold;
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
 }
