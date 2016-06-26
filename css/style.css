@@ -1,6 +1,14 @@
+/*
+*BASIC SETUP
+*/
+
+/*
+*Orange color = #e67e22
+*/
 *{
     padding: 0;
     margin: 0;
+    /*box size reset*/
     box-sizing: border-box;
 }
 
@@ -9,10 +17,132 @@ html{
     color: #555;
     font-family: 'Lato','Arial',sans-serif;
     font-weight: 300;
+    /*font size global*/
     font-size: 20px;
+    /*Smooth text rendering*/
     text-rendering: optimizeLegibility;
 }
+
+/*
+*REUSABLE COMPONENTS
+*/
 .row{
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
+}
+
+/*
+*HEADING
+*/
+header h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 200%;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+.hero-text-box{
+    font-family: 'Lato';
+    width: 1140px;
+    /*posisi absolute titik awal diukur dari kiri text tsb*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*untuk translate posisi yg awalnya 50%:50% diubah ke minus(-50%) hasilnya akan menggeser kekiri*/
+    transform: translate(-50%,-50%);
+}
+
+/*
+*BUTTONS
+*/
+
+/*:link untuk button kondisi normal saat mouse tertuju visited untuk link button setelah di klik user*/
+.btn:link,
+.btn:visited {
+    /*inline(sejajar) membuat button sejajar tapi tetap ada padding dan bisa set margin(block)*/
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #FFF;
+    /*animasi saat pointer mouse tertuju pada button, terlihat smooth*/
+    transition: 
+        background-color 0.5s,
+        border 0.5s,
+        color 0.5s;
+        
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    margin-right: 15px;
+    
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+.btn-full:hover,
+.btn-full:active {
+    background-color: #bf6516;
+    border: 1px solid #bf6516;
+    
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #bf6516;
+    border: 1px solid #bf6516;
+    color: #FFF;
+}
+
+/*
+*HEADER
+*/
+header{
+    /*linier gradient rgba(digit terakhir untuk opacity)*/
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/omnifood.jpg);
+    /*background size full cover*/
+    background-size: cover;
+    background-position: center;
+    /*height viewport untuk memaksimalkan background sampai ke full atas dan bawah*/
+    height: 100vh;
+}
+.logo{
+
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    font-family: 'Lato';
+    margin-top: 50px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    padding: 15px 0;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.7s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 1px solid #e67e22;
 }
